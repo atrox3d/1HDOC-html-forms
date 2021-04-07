@@ -49,7 +49,7 @@ def login():
     username = request.form['username']
     password = request.form['password']
     print(username, password)
-    return "post"
+    return render_template("index.html", username=username, password=password)
 
 
 if __name__ == '__main__':
